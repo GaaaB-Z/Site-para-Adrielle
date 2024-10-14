@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Georgia', serif;
+    background-color: #fdf0d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.envelope {
+    background: #f4d8b4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    border: 2px solid #f1a7a7; /* Bordas com um toque de rosa */
+}
+
+.carta {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+    color: #333;
+    border: 1px solid #f1a7a7; /* Borda sutil para dar um toque amoroso */
+}
+
+h1 {
+    font-family: 'Cursive', 'Lucida Handwriting', cursive;
+    color: #b5651d;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h1::after {
+    content: '❤️';
+    position: absolute;
+    right: -25px;
+    top: -10px;
+}
+
+p {
+    margin: 15px 0;
+    text-indent: 40px;
+    font-style: italic; /* Adicionando um toque suave e romântico ao texto */
+}
+
+.galeria {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-family: 'Cursive', 'Lucida Handwriting', cursive;
+    color: #b5651d;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.galeria h2::before {
+    content: '💖';
+    position: absolute;
+    left: -25px;
+    top: -10px;
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.imagens img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #f4d8b4;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagens img:hover {
+    transform: scale(1.2);
+    border-color: #f1a7a7; /* Altera a cor da borda ao passar o mouse */
+}
